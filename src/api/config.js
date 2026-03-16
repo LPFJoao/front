@@ -2,7 +2,7 @@ import axios from "axios";
 
 const instance = axios.create({
   baseURL: "https://pseudogenteel-dearly-aaliyah.ngrok-free.dev",
-  timeout: 1000,
+  timeout: 10000,
 });
 
 instance.interceptors.request.use(

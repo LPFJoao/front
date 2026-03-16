@@ -50,7 +50,7 @@ export function Register() {
     },
     onSuccess: (res) => {
       alert(res.data.message);
-      navigate("/login"); // redirection après inscription
+      navigate("/auth/login"); // redirection après inscription
     },
     onError: (err) => {
       alert(err.response?.data?.error || "Une erreur est survenue");
