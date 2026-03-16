@@ -3,6 +3,9 @@ import axios from "axios";
 const instance = axios.create({
   baseURL: "https://pseudogenteel-dearly-aaliyah.ngrok-free.dev",
   timeout: 10000,
+  headers: {
+    'ngrok-skip-browser-warning': 'true'
+  },
 });
 
 instance.interceptors.request.use(
